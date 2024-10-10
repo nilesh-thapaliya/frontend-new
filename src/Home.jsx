@@ -7,7 +7,7 @@ const Home = () => {
     const handleSubmit = async (values, { resetForm }) => {
         try {
           
-            const response = await axios.post('http://localhost:3021/form-one', values)
+            const response = await axios.post('http://backend-new-umber.vercel.app/form-one', values)
             const data = response.data
 
             if (data.success) {
